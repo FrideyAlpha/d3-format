@@ -6,9 +6,9 @@ export var formatCurrencyPrefix;
 export var formatPrefix;
 
 defaultLocale({
-  thousands: ",",
+  thousands: ".",
   grouping: [3],
-  currency: ["$", ""]
+  currency: ["Rp", ""]
 });
 
 export default function defaultLocale(definition) {

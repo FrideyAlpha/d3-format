@@ -9,7 +9,7 @@ import identity from "./identity.js";
 
 var map = Array.prototype.map,
     SIprefixes = ["y","z","a","f","p","n","µ","m","","k","M","G","T","P","E","Z","Y"],
-    defaultCurrencyAbbreviations = ["", "K", "M", "B", "T"];
+    defaultCurrencyAbbreviations = ["", "Rb", "Jt", "M", "T"];
 
 export default function(locale) {
   var group = locale.grouping === undefined || locale.thousands === undefined ? identity : formatGroup(map.call(locale.grouping, Number), locale.thousands + ""),
